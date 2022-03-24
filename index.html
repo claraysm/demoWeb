@@ -13,6 +13,7 @@ H1 {
 }	
 H2 {
 	text-align: right;
+	text-transform: uppercase;
 	border: black 7px solid;
 	margin-left: auto;
 	margin-right: auto;
@@ -34,28 +35,58 @@ H5 {
 	font-size: 45px;
 	text-align: center;
 }
+H6 {
+	font-size: 30px;
+	text-align: center;
+}
 table {
     margin: 70 auto;
 }
 </style>	
 </HEAD>
-<BODY>
-<a name="#inicio"> <H1> [título 1] </H1> </a>
-<p><H2> <a href="#inicio"> [Inicio] </a> | <A href="P1"> [Página 1] </A> | <A href="contactos"> [Contactos] </A> </H2>
-<table WIDTH="100%" cellpadding="20">
+<BODY background="https://thumbs.dreamstime.com/b/fondo-azul-claro-de-la-textura-del-fieltro-104981380.jpg">
+<a name="#inicio"> <H1> [Título] </H1> </a>
+<p><H2> <a href="#inicio"> Inicio </a> | <A href="#P1"> Información </A> | <A href="#contactos"> Contactos </A> </H2>
+<table WIDTH="100%" cellpadding="50">
 <tr>	
-<td><Center><H4> <img src="https://img.freepik.com/foto-gratis/primer-disparo-flor-morada_181624-25863.jpg?size=626&ext=jpg" width=auto height=auto > </H4></Center></td>
-<td><Center><H4> <img src="https://img.freepik.com/foto-gratis/primer-disparo-flor-morada_181624-25863.jpg?size=626&ext=jpg" width=auto height=auto > </H4></Center></td>
-<td><Center><H4> <img src="https://img.freepik.com/foto-gratis/primer-disparo-flor-morada_181624-25863.jpg?size=626&ext=jpg" width=auto height=auto  > </H4></Center></td> 
+<td><Center><H4> <img src="https://www.grupolarabida.org/wp-content/uploads/2020/10/Espana_UniversidaddeSevilla_US_51_.jpg" width=auto height=500 > </H4></Center></td>
+<td><Center><H4> <img src="https://www.biblioteca-eni.com/rsc/actualites/vignettes/vignette_upo_logo.png" width=auto height=500 > </H4></Center></td>
+<td><Center><H4> <img src="https://www.grupolarabida.org/wp-content/uploads/2020/10/Espana_UniversidadLoyolaAndalucia_ULOYOLA_54_.jpg" width=auto height=500 > </H4></Center></td> 
 	</tr>
 	<tr>
-<td><H3> [texto 1] </H3></td>
-<td><H3> [texto 2] </H3></td>
-<td><H3> [texto 3] </H3></td> 
+<td><H3> Universidad de Sevilla </H3></td>
+<td><H3> Plablo de Olavide </H3></td>
+<td><H3> Universidad Loyola </H3></td> 
 	</tr>	
 </table>	
 <BR>
 <BR>
-<H5> Clara Sayagués Martínez [FECHA ACTUAL] </H5>	
+<H5> Clara Sayagués Martínez,  <script type="text/javascript">
+//<![CDATA[
+var date = new Date();
+var d  = date.getDate();
+var day = (d < 10) ? '0' + d : d;
+var m = date.getMonth() + 1;
+var month = (m < 10) ? '0' + m : m;
+var yy = date.getYear();
+var year = (yy < 1000) ? yy + 1900 : yy;
+document.write(day + "/" + month + "/" + year);
+//]]>
+</script>   </H5>
+<H6> Hora española (península): <script type="text/javascript">
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+</script>
+<div id="reloj" style="font-size:30px;"></div> <H6>
 </BODY>
 </HTML>
