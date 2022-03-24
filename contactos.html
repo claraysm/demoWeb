@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+<TITLE>Ejercicio 11 - Página Web con GitHub.com </TITLE>
+<style>
+H1 {
+	text-transform: uppercase;
+	text-align: center;
+	border: black 7px solid;
+	margin-left: auto;
+	margin-right: auto;
+  	padding: 100px;
+	font-size: 70px;
+}	
+H2 {
+	text-align: right;
+	text-transform: uppercase;
+	border: black 7px solid;
+	margin-left: auto;
+	margin-right: auto;
+  	padding: 60px;
+	font-size: 40px;
+	word-spacing: 50px;
+	text-shadow: gray 1px 1px, gray -1px -1px;
+}
+H3 {
+	font-size: 45px;
+}
+H31 {
+	font-size: 30px;
+}
+H4 {
+	border: black 7px solid;
+	WIDTH=auto
+	position:relative;
+	top:30px;
+	bottom:;
+	right:;
+	left:;
+}
+H5 {
+	font-size: 45px;
+	text-align: center;
+}
+H6 {
+	font-size: 30px;
+	text-align: center;
+	left:30px;
+}
+table {
+    margin: 70 auto;
+}
+</style>	
+</HEAD>
+<BODY background="https://thumbs.dreamstime.com/b/fondo-azul-claro-de-la-textura-del-fieltro-104981380.jpg">
+<a name="#contactos"> <H1> [Título] </H1> </a>
+<p><H2> <a href="#inicio"> Inicio </a> | <A href="#P1"> Información </A> | <A href="#contactos"> Contactos </A> </H2>
+<H3> Estamos en el IES Maese Rodrigo, ven a prguntarnos tus dudas, nosotros te orientamos. Si lo prefieres, puedes mandarnos tus preguntas vía online: </H3>
+<BR>
+<table WIDTH="95%" cellpadding="50">
+<tr>	
+	<td><Center><H4><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.0095313952047!2d-5.653040977144313!3d37.464879234603885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd128b7eb45f65f7%3A0x2f9a2040f6c801ee!2sI.E.S%20Maese%20Rodrigo!5e0!3m2!1ses!2ses!4v1647591681836!5m2!1ses!2ses" width="900" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe> </H4></Center></td>
+	<td>
+	<form>
+<fieldset>
+	<legend><H4>Preguntanos cualquier duda: </H4></legend>
+	<p> <H31>Estado laboral/de estudio:</H31> </p>
+	<H31><input type="radio" name="1" value="1">ESO </H3><br>
+	<H31><input type="radio" name="1" value="1">Grado/Módulo </H31><br>
+	<H31><input type="radio" name="1" value="1">Bachillerato </H31><br>
+	<H31><input type="radio" name="1" value="1">Trabajando </H31><br>´
+</fieldset>
+<fieldset>
+	<legend> <H31> Datos de contacto: </H31></legend> <br>
+	<H31>Nombre: <input type="text" name="2" font-size="45px">  <br></H31>
+	<H31>E-mail: <input type="text" name="3" size="45px"> <br></H31>
+	<H31>Teléfono: <input type="text" name="4" size="45px">  <br></H31>
+	<H31>Escribe tu duda: <br></H31>
+	<H31><textarea name="mas" rows="30" cols="70">  </textarea> <br></H31>
+</fieldset>
+<fieldset>
+	<legend> <H31> Edad: </H31></legend> <br><select name="edad">
+		<option><H31>Menor (-18 años)</H31></option>
+		<option><H31>Mayor de edad (18 a 24 años)</H31></option>
+		<option><H31>Adulto mayor (+24 años)</H31></option>
+	</select>
+</fieldset>
+	<BR>
+<H31><button type="reset">
+Enviar
+</button></H31>
+</form>
+</tr></table>	
+<BR>
+<BR>
+<H5> Clara Sayagués Martínez,  <script type="text/javascript">
+//<![CDATA[
+var date = new Date();
+var d  = date.getDate();
+var day = (d < 10) ? '0' + d : d;
+var m = date.getMonth() + 1;
+var month = (m < 10) ? '0' + m : m;
+var yy = date.getYear();
+var year = (yy < 1000) ? yy + 1900 : yy;
+document.write(day + "/" + month + "/" + year);
+//]]>
+</script>   </H5>
+<H6> Hora española (península): <script type="text/javascript">
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+</script>
+<div id="reloj" style="font-size:30px;"></div> <H6>
+</BODY>
+</HTML>
